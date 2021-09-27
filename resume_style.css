@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style:none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color:#555555;
+}
+.bold{
+    font-weight:500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.semi_bold{
+    font-weight:400;
+    font-size: 16px;
+
+}
+.row{
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+
+}
+.row .row_left{
+    width:280px;
+    background: #0bb5f4;
+}
+.row .row_left .row_profile{
+    width: 100%;
+    height: 280px;
+}
+.row .row_left .row_profile img{
+    width: 100%;
+    height: 100%;
+}
+.row .row_left .row_content{
+    padding: 25px;
+}
+.row .title{
+    margin-bottom: 20px;
+}
+.row .row_left .bold{
+    color:#fff;
+}
+.row .row_left .regular{
+    color:#b1eaff;
+}
+.row .row_item{
+    padding: 25px;
+    border-bottom: 2px solid #b1eaff;
+}
+.row .row_left .row_item:last-child,
+.row .row_right .row_item:last-child{
+    border-bottom:0px;
+}
+.row .row_left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.row .row_left ul li:last-child{
+    margin-bottom: 0;
+    }
+.row .row_left ul li .icon{
+        width: 32px;
+        height: 32px;
+        background:white;
+        color:#0bb5f4;
+        border-radius: 50%;
+        margin-right: 15px;
+        font-size: 16px;
+        position: relative;
+    }
+.row .icon i,
+.row .row_right .hobby ul li i
+{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+.row .row_left ul li .data{
+    color:#b1eaff;
+}   
+.row .row_left .skills ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+}
+.row .row_left .skills ul li .skil_name{
+    width: 25%;
+
+}
+.row .row_left .skills ul li .skill_progress{
+    width: 60%;
+    margin:5px;
+    height: 5px;
+    background: #009fd9;
+    position: relative;
+}
+.row .row_left .skills ul li .skill_per{
+    width: 15%;
+}
+.row .row_left .skills ul li .skill_progress span{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    background:#fff;
+}
+.row .row_right{
+    width: 520px;
+    background:#fff;
+    padding:25px;
+}
+.row .row_right .bold{
+    color:#0bb5f4
+}
+.row .row_right .education ul{
+    padding-left: 40px;
+    overflow: hidden;
+}
+.row .row_right ul li{
+    position: relative;
+}
+.row .row_right ul li .date{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.row .row_right ul li .info{
+    margin-bottom: 20px;;
+}
+.row .row_right ul li .info{
+    margin-bottom: 0;
+}
+.row .row_right .hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+.row .row_right .hobby ul li{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color:#0bb5f4;
+}
+.row .row_right .hobby ul li i{
+    font-size:30px;
+}
